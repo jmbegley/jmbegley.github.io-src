@@ -10,13 +10,16 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://jmbegley.github.io'
+SITEURL = 'http://www.jmbegley.org.uk'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = False
+
+
+SEARCH_URL = '/search'
 
 # Following items are often useful when publishing
 
