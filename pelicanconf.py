@@ -25,13 +25,11 @@ PLUGINS = ['tipue_search', 'filetime_from_git',
            'liquid_tags.img', 'liquid_tags.flickr']
 
 # Feed generation is usually not desired when developing
-FEED_DOMAIN = 'http://www.jmbegley.org.uk'
-FEED_ALL_ATOM = None
-FEED_ALL_RSS = None
+FEED_DOMAIN = SITEURL
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
 
 SHOW_ARTICLE_AUTHOR = True
 SHOW_ARTICLE_CATEGORY = True
