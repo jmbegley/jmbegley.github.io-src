@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'James Begley'
-SITENAME = 'James Begley'
+SITENAME = 'Random Thoughts From Mendipshire'
 SITEURL = 'http://www.jmbegley.org.uk'
 
 PATH = 'content'
@@ -30,6 +30,7 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 SHOW_ARTICLE_AUTHOR = True
 SHOW_ARTICLE_CATEGORY = True
@@ -65,6 +66,7 @@ SOCIAL = (('twitter', 'http://twitter.com/jmbegley'),
           ('facebook', 'http://www.facebook.com/jamesbegley'),
           ('linkedin', 'http://www.linkedin.com/in/jamesbegley'),
           ('github', 'http://github.com/jmbegley'),
+          ('rss', SITEURL + '/' + FEED_ALL_ATOM),
           ('email', 'mailto:james@jmbegley.org.uk', 'envelope'),)
 
 DEFAULT_PAGINATION = 4
