@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'James Begley'
-SITENAME = 'Random Thoughts From Mendipshire'
+SITENAME = 'Random thoughts from the edge of Mendipshire'
 SITEURL = 'http://www.jmbegley.org.uk'
 
 PATH = 'content'
