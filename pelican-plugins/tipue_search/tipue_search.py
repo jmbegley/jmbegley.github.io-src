@@ -30,6 +30,7 @@ class Tipue_Search_JSON_Generator(object):
         self.output_path = output_path
         self.context = context
         self.siteurl = settings.get('SITEURL')
+        self.relative_urls = settings.get('RELATIVE_URLS')
         self.tpages = settings.get('TEMPLATE_PAGES')
         self.output_path = output_path
         self.json_nodes = []
@@ -47,12 +48,11 @@ class Tipue_Search_JSON_Generator(object):
         page_text = soup_text.get_text(' ', strip=True).replace('“', '"').replace('”', '"').replace('’', "'").replace('¶', ' ').replace('^', '&#94;')
         page_text = ' '.join(page_text.split())
 
-        if getattr(page, 'category', 'None') == 'None':
-            page_category = ''
-        else:
-            page_category = page.category.name
+        page_category = page.category.name if getattr(page, 'category', 'None') != 'None' else ''
 
-        page_url = self.siteurl + '/' + page.url
+        page_url = '.'
+        if page.url:
+            page_url = page.url if self.relative_urls else (self.siteurl + '/' + page.url)
 
         node = {'title': page_title,
                 'text': page_text,
@@ -66,17 +66,11 @@ class Tipue_Search_JSON_Generator(object):
 
         srcfile = open(os.path.join(self.output_path, self.tpages[srclink]), encoding='utf-8')
         soup = BeautifulSoup(srcfile, 'html.parser')
+        page_title = soup.title.string if soup.title is not None else ''
         page_text = soup.get_text()
-
-        # What happens if there is not a title.
-        if soup.title is not None:
-            page_title = soup.title.string
-        else:
-            page_title = ''
 
         # Should set default category?
         page_category = ''
-
         page_url = urljoin(self.siteurl, self.tpages[srclink])
 
         node = {'title': page_title,

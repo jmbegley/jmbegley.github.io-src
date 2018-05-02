@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'James Begley'
 SITENAME = 'Random thoughts from the edge of Mendipshire'
-SITEURL = 'http://www.jmbegley.org.uk'
+SITEURL = 'https://www.jmbegley.org.uk'
 
 PATH = 'content'
 
@@ -12,16 +12,19 @@ TIMEZONE = 'Europe/London'
 DEFAULT_LANG = 'en'
 
 THEME = 'pelican-bootstrap3'
-BOOTSTRAP_THEME = 'spacelab'
+BOOTSTRAP_THEME = 'lumen'
 
-GITHUB_USER = 'jmbegley'
-GITHUB_SKIP_FORK = True
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+
+#GITHUB_USER = 'jmbegley'
+#GITHUB_SKIP_FORK = True
 
 TWITTER_USERNAME = 'jmbegley'
+#TWITTER_WIDGET_ID = '681170926851985408'
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['tipue_search', 'filetime_from_git',
-           'post_revision', 'feed_summary',
+           'post_revision', 'i18n_subsites',
            'liquid_tags.img', 'liquid_tags.flickr']
 
 # Feed generation is usually not desired when developing
@@ -31,6 +34,9 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+# Pygment highlighting scheme
+PYGMENTS_STYLE = 'solarizeddark'
 
 SHOW_ARTICLE_AUTHOR = True
 SHOW_ARTICLE_CATEGORY = True
@@ -58,14 +64,16 @@ SHARIFF_SERVICES  = "[&quot;facebook&quot;,&quot;googleplus&quot;,&quot;twitter&
 SHARIFF_THEME = "grey"
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),)
+LINKS = (('Mendip Cave Rescue', 'https://www.mendipcaverescue.org/'),
+         ('Shepton Mallet Caving Club', 'https://www.shepton.org.uk/'),)
 
 # Social widget
-SOCIAL = (('twitter', 'http://twitter.com/jmbegley'),
-          ('facebook', 'http://www.facebook.com/jamesbegley'),
-          ('linkedin', 'http://www.linkedin.com/in/jamesbegley'),
-          ('github', 'http://github.com/jmbegley'),
+SOCIAL = (('twitter', 'https://twitter.com/jmbegley'),
+          ('facebook', 'https://www.facebook.com/jamesbegley'),
+          ('linkedin', 'https://www.linkedin.com/in/jamesbegley'),
+          ('github', 'https://github.com/jmbegley'),
+          ('flickr', 'https://www.flickr.com/photos/jmbegley'),
+#         ('strava', 'https://www.strava.com/athletes/7460696'),
           ('rss', SITEURL + '/' + FEED_ALL_ATOM),
           ('email', 'mailto:james@jmbegley.org.uk', 'envelope'),)
 
