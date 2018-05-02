@@ -2,13 +2,13 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'James Begley'
-SITENAME = 'Random thoughts from the edge of Mendipshire'
-SITEURL = 'https://www.jmbegley.org.uk'
+SITENAME = 'Random Thoughts From the Edge of Mendipshire'
+#SITEURL = 'https://www.jmbegley.org.uk'
+SITEURL = ''
 
 PATH = 'content'
 
 TIMEZONE = 'Europe/London'
-
 DEFAULT_LANG = 'en'
 
 THEME = 'pelican-plugins/pelican-bootstrap3'
@@ -20,7 +20,6 @@ JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 #GITHUB_SKIP_FORK = True
 
 TWITTER_USERNAME = 'jmbegley'
-#TWITTER_WIDGET_ID = '681170926851985408'
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['tipue_search', 'filetime_from_git',
@@ -46,12 +45,12 @@ DISPLAY_BREADCRUMBS = True
 DISPLAY_TAGS_ON_SIDEBAR = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
-STATIC_PATHS = ['extras', 'images', 'files']
+STATIC_PATHS = ['extras', 'files', 'images']
 EXTRA_PATH_METADATA = {
     'extras/CNAME': {'path': 'CNAME'},
     }
 
-#FAVICON = 'extras/favicon.ico'
+FAVICON = 'extras/favicon.ico'
 #BANNER = 'extras/banner.jpg'
 #CUSTOM_CSS = 'extras/custom.css'
 
@@ -60,8 +59,9 @@ DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives', 'search')
 # share posts
 SHARIFF = True
 SHARIFF_LANG = "en"
-SHARIFF_SERVICES  = "[&quot;facebook&quot;,&quot;googleplus&quot;,&quot;twitter&quot;]" #,&quot;mail&quot;]"
+SHARIFF_SERVICES  = "[&quot;facebook&quot;,&quot;googleplus&quot;,&quot;twitter&quot;,&quot;linkedin&quot;]" #,&quot;mail&quot;]"
 SHARIFF_THEME = "grey"
+SHARIFF_ORIENTATION = "horizontal"
 
 # Blogroll
 LINKS = (('Mendip Cave Rescue', 'https://www.mendipcaverescue.org/'),
@@ -83,6 +83,15 @@ DEFAULT_PAGINATION = 4
 GITHUB_URL = 'https://github.com/jmbegley/jmbegley.github.io-src'
 POST_REVISION_TEXT = "Post History:"
 POST_HISTORY_MAX_COUNT = 3
+
+# about me
+SHOW_ABOUTME = True
+AVATAR = "images/jmb.jpg"
+ABOUT_ME = """
+I work with computers, usually analysing problems to see why things aren't working as expected.
+<br/><br/>
+My other interests include caving, skiing, running and cooking.
+"""
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
