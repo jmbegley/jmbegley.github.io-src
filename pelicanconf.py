@@ -11,7 +11,7 @@ TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en'
 
-THEME = 'pelican-bootstrap3'
+THEME = 'pelican-plugins/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'lumen'
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
