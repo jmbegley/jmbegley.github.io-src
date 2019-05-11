@@ -65,6 +65,7 @@ BSc(Hons) in Mathematics, grade awarded: Upper second class (2i).
 * Experience of using various modelling packages, including statistical analysis using R, software design in UML using Enterprise Architect and mathematical analysis using MatLab.
 * ITIL v3 Foundation Certificate in IT Service Management.
 * ILM Skills for Change.
+* First Aid at Work qualification from [St Johns Ambulance](http://www.sja.org.uk/sja/training-courses/first-aid-courses/first-aid-at-work.aspx)
 * Full, clean UK driving licence.
 
 ## Interests &amp; Activities
