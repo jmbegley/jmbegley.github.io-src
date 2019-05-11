@@ -8,13 +8,13 @@ Save_as: pages/james-begley-cv.html
 
 Full Name: James Michael Begley
 
-Nationality: British
-
 Contact Details: [email](mailto:james@jmbegley.org.uk) or [mobile phone](tel:+447977451597)
+
+## Profile Summary
 
 ## Employment
 
-### September 2008 – present, [Systems Engineering &amp; Assessment Ltd](https://www.sea.co.uk), Bath, UK
+### September 2008 – present, [Systems Engineering &amp; Assessment Ltd](https://www.sea.co.uk), Bristol, UK
 
 Currently employed as a senior consultant within a systems engineering and software development company. Example projects worked on include the following:
 
@@ -63,7 +63,8 @@ BSc(Hons) in Mathematics, grade awarded: Upper second class (2i).
 
 * Scientific computing, including programming in C++, C and C#, and database programming using Microsoft SQL Server and PostgreSQL, to be run on both Linux and Windows platforms.
 * Experience of using various modelling packages, including statistical analysis using R, software design in UML using Enterprise Architect and mathematical analysis using MatLab.
-* A working knowledge of Icelandic, and basic conversational French and German.
+* ITIL v3 Foundation Certificate in IT Service Management.
+* ILM Skills for Change.
 * Full, clean UK driving licence.
 
 ## Interests &amp; Activities
@@ -71,4 +72,7 @@ BSc(Hons) in Mathematics, grade awarded: Upper second class (2i).
 Active member and journal editor of a local caving club, and have enjoyed several expeditions to explore new caves in remote areas of Iceland and Thailand. Rescue warden and webmaster for [Mendip Cave Rescue](https://www.mendipcaverescue.org), the local voluntary cave rescue service.
 Also enjoy many other outdoor activities, including skiing, cycling and running.
 
+## References
+
+References available on request.
 
