@@ -16,7 +16,7 @@ Contact Details: [email](mailto:james@jmbegley.org.uk) or [mobile phone](tel:+44
 
 ### September 2008 – present, [Systems Engineering &amp; Assessment Ltd](https://www.sea.co.uk), Bristol, UK
 
-Currently employed as a senior consultant within a systems engineering and software development company. Example projects worked on include the following:
+Currently employed as a Principal Consultant within a systems engineering and software development company. Example projects worked on include the following:
 
 * Technical Lead for the Digital Traffic Enforcement System (DTES) and the Parking Enforcement Solution (PES), two bespoke software systems developed for Transport for London (TfL). DTES is a system that allows TfL enforcement officers to view up to 4 CCTV streams simultaneously and capture evidential video footage of contraventions when they are observed. PES is an on street enforcement system, allowing enforcement officers to capture parking contraventions using an application on their mobile phone.
 * Algorithm development for the Hard Shoulder Monitoring System (HASMOS), a prototype system developed for the Highways Agency. The HASMOS algorithm was developed as part of the M42 "Managed Motorways" program which used data from a variety of sensors (including radar and induction loops) to determine whether the hard shoulder of the motorway was clear of any obstructions before it could be used as a running lane.
